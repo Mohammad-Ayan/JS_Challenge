@@ -1,4 +1,4 @@
-//-Activity: Arithmetic Operations
+//-Activity 1: Arithmetic Operations
 //Task 1: WAP to add 2 no's 
 
 // let a = 3;
@@ -34,7 +34,7 @@
 // const modulo = a % b;
 // console.log(modulo);
 
-//Activity: Assignment Operators
+//-Activity 2: Assignment Operators
 //Task 6: Using += operator to add a number to a variable
 
 // let a = 70;
@@ -47,6 +47,7 @@
 // a -= 45;  //variable = variable + value
 // console.log(a);
 
+//-Activity 3: Comparision Operators
 //Task 8: WAP to compare 2 no's using > & < 
 
 // let a = 70;
@@ -64,3 +65,53 @@
 // const boolean2 = a >= b;
 // console.log(boolean1);
 // console.log(boolean2);
+
+//Task 10: WAP to compare 2 no's using == & === 
+
+// let a = 70;
+// let b = 70;
+// let e = true;
+// const c = a == b;
+// const d = a === e;  // return true if both the value and type are the same.
+// console.log(c);
+// console.log(d);
+
+//console.log(5 === '5'); // false, because 5 is a number and '5' is a string
+
+//-Activity 4: Logical Operators
+//Task 11: WAP combine 2 condition using && operator.
+
+// let a = true;
+// let b = false;
+// let c = true;
+
+// console.log(a && b); // false, because b is false
+// console.log(a && c); // true, because both a and c are true
+
+//Task 12: WAP combine 2 condition using || operator.
+
+// let a = true;
+// let b = false;
+// let c = true;
+// let d = false;
+
+// console.log(a || b); // true, because 1 is true
+// console.log(a || c); // true, both are true
+// console.log(b || d); // false, both are false
+
+//Task 13: WAP tht negate a condition using ! operator.
+
+// let a = true;
+// console.log(!(a)); // false will be the o/p
+
+//-Activity 5: Ternary Operator
+//Task 14: WAP using ternary operator to check no is +ve or -ve
+// let score = 85;
+// let grade = (score >= 90) ? 'A' :
+//             (score >= 80) ? 'B' :
+//             (score >= 70) ? 'C' :
+//             (score >= 60) ? 'D' : 'F';
+
+// console.log(grade); // Output: B
+
+
