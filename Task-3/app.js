@@ -162,7 +162,7 @@ switch (gradeCategory) {
 //Task 6: WAP that uses ternary operator to check if a no is even or odd 
 
 let num = prompt("Enter the Number");
-let check = (num % 2==0)?"Even":"Odd";
+let check = (num % 2 == 0) ? "Even" : "Odd";
 console.log(check);
 
 //-Activity 5: Combining Conditons
@@ -170,8 +170,8 @@ console.log(check);
 // (divide by 4, but not 100 unless also divide by 400) 
 
 let year = prompt("Enter the year which you have to check");
-if(year%4==0 && (year%100 != year%400==0)){
+if (year % 4 == 0 && (year % 100 != year % 400 == 0)) {
     console.log(year + 'is leap year');
-}else{
+} else {
     console.log(year + 'is not leap year');
 }
