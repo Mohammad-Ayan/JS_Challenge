@@ -32,7 +32,7 @@ const obj = {
 //-Activity-4: Reassigning Variables
 // Task 5:
 
-let a = 10;
+//let a = 10;
 console.log(a);
 a = a+5
 console.log(b);
