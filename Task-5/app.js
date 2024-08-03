@@ -1,4 +1,4 @@
-// Day-5: Function
+// Day-5: Functions
 
 //Activity 1: Function Declaration 
 //Task1: WAP to check if a number  is even or odd and log the result to the console 
