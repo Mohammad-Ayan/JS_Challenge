@@ -28,11 +28,11 @@
 
 // const Max = function(a, b) {
 //     return (a > b) ? a : b;
-   
+
 // };
 
 // console.log(Max(4, 5));
- 
+
 // //Task4: Function expression to concatenate two strings and return the result
 
 // const ConcStr =  function(str1, str2){
@@ -72,4 +72,31 @@
 // console.log(prod(2,4));   // Output:8  (2*4)
 // console.log(prod(2));     //Output:4   (2*2)
 
-//Task
+//Task8: Function that takes the person name and age, returns a greeting message. Provide the default for the age.
+
+// const Greet = (name, age=12) => {
+//     return `Hello, ${name}! and you are ${age} years old.`;
+// };
+
+// console.log(Greet("Ayan", 18));
+// console.log(Greet("Habiba"));
+
+//Activity 5: Higher Order Function
+//Task 9: Higher Order Function that takes a function and a number, and calls the function that many times
+
+let greet = () => {
+    console.log("Assalamualikum");
+}
+
+function multipleGreet(func, number) {
+    for (let i = 1; i <= number; i++) {
+        func();
+    }
+}
+
+multipleGreet(greet, 5);
+
+//Task 10: Higher Order Function that takes 2 functions and value, apply the 1st function to the value,
+// and then applies 2nd function to the result
+
+let func1 = num => (num+1); 
