@@ -43,7 +43,7 @@ console.log(arr);         // Output: 1, 2, 3, 4, 5
 //Activity 3: Array Methods(Intermediate)
 //Task 7: Use the map method to create a new array where each number is doubled and log the new array.
 
-let numbers = [2, 4, 6, 8];
+let numbers = [5, 6, 7, 8, 9];
 let doublenumbers = numbers.map(function(number){
     return number*2;
 });
@@ -56,6 +56,15 @@ console.log(numbers);        // [2, 4, 6, 8]
 
 //Task 7: Use the filter method to create a new array with only even numbers and log the new array.
 
+let newNumbers = numbers.filter(function(number){
+    return number % 2 == 0;
+});
 
+//OR
+// let newNumbers = numbers.filter(number => number % 2 == 0);
+
+console.log(newNumbers);
+
+//Task 9: Use the reduce method to calculate sum of all the numbers in an Array and log the new array.
 
 
