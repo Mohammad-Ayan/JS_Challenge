@@ -94,3 +94,51 @@ library.books.forEach(book => {
 //Activity 4: The this Keyword
 //Task 7: Add a method to the book object that uses the this keyword to return a string with the book's title 
 // and year and log the result of calling this method.
+
+const book3 = {
+    title: " keep it concise",
+    author: "William Shakespeare ",
+    year: 1962,
+    getInfo: function () {
+        return `${this.title} and ${this.year}`;
+    }
+}
+console.log(book3.getInfo());
+
+//Activity 5: Object Iteration
+// //Task 8: Use a for...in loop to iterate over the properties of the book object and log each property and its value.
+
+for (const key in book3) {
+    const element = book3[key];
+    console.log(key + ":" + element);
+}
+
+//Tssk 9: Use [Object.keys] and [Object.values] methods to log all the keys and values of the book object.
+
+const BookHub = {
+    name: "36 Creasent Library",
+    books: [
+        {
+            title: "yxyz",
+            author: "Harper Lee",
+            year: 1960
+
+        },
+        {
+            title: "pqrz",
+            author: "Harper Lee",
+            year: 1960
+        },
+        {
+            title: "abcz",
+            author: "Harper Lee",
+            year: 1960
+        }
+    ]
+};
+
+const keys = Object.keys(BookHub);
+console.log(keys);
+
+const values = Object.values(BookHub);
+console.log(values);
