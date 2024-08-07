@@ -22,8 +22,41 @@ const Book1 = {
     title: "xyz",
     author: "pqr",
     year: 2021,
-    info: function(){
+    info: function () {
         return `${this.title} by ${this.author}`;
     }
 }
 console.log(Book1.info());
+
+//Task 4: Add a method to the book object that takes a paremeter (year) and updates the book's year properly,
+// then log the updated object.
+
+const Book2 = {
+    title: "xyz",
+    author: "pqr",
+    year: 2021,
+    info: function (year) {
+        return this.year = 2024;
+    }
+}
+
+
+console.log(Book2.info());
+console.log(Book2);
+
+//OR
+const Book3 = {
+    title: "xyz",
+    author: "pqr",
+    year: 2021,
+    updateYear(newYear) {
+        this.year = newYear;
+    }
+};
+
+Book3.updateYear(2024);
+console.log(Book3);
+
+//Activity 3: Nested Objects
+//Task 4: Add a method to the book object that takes a paremeter (year) and updates the book's year properly,
+// then log the updated object.
